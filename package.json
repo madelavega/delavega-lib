@@ -1,8 +1,16 @@
 {
   "name": "delavega-lib",
   "version": "0.1.0",
+  "description" : "web components library based on litElement",
+  "author" : {
+    "name" : "Manuel de la Vega Arantave",
+    "email" : "maandelavega@gmail.com"
+  },
   "dependencies": {
     "lit-element": "^2.4.0"
+  },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
   },
   "main": "dist/index.js",
   "files": [
@@ -11,9 +19,9 @@
   ],
   "scripts": {
     "bundle": "rollup -c",
-    "test": "karma start karma.screen.conf.js && karma start karma.mobile.conf.js",
-    "next-ci": "npm bump --prerelease --tag --push --preid rc --all && npm run prepare",
-    "latest-ci": "npm bump patch --tag --push && npm run prepare && npm publish --tag latest"
+    "test": "npm run karma start karma.screen.conf.js && npm run karma start karma.mobile.conf.js",
+    "next-ci": "npm run bump --prerelease --tag --push --preid rc --all && npm run prepare",
+    "latest-ci": "npm run bump patch --tag --push && npm run prepare && npm publish --tag latest"
   },
   "devDependencies": {
     "@open-wc/testing": "^2.5.32",
