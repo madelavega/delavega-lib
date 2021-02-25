@@ -19,9 +19,9 @@
   ],
   "scripts": {
     "bundle": "rollup -c",
-    "test": "npm run karma start karma.screen.conf.js && npm run karma start karma.mobile.conf.js",
-    "next-ci": "npm run bump --prerelease --tag --push --preid rc --all && npm run prepare",
-    "latest-ci": "npm run bump patch --tag --push && npm run prepare && npm publish --tag latest"
+    "test": "karma start karma.screen.conf.js && npm run karma start karma.mobile.conf.js",
+    "next-ci": "bump --prerelease --tag --push --preid rc --all && npm run prepare",
+    "latest-ci": "bump patch --tag --push && npm run prepare && npm publish --tag latest"
   },
   "devDependencies": {
     "@open-wc/testing": "^2.5.32",
