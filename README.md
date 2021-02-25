@@ -2,58 +2,25 @@
 
 Librabry based on litElements that provides the following components:
 
-## DropDown (&lt;delavega-dropdown/>)
-Collection of values selector
-
-### defaultEmptyValue     (Boolean)
-Selectable empty value fot he selector. If true, the default empty value could be selected
-
-### defaultEmptyValueText (String - default: 'None')
-if defaultEmptyValue is true, the text to be displayed for 
-
-### data                  (Array)
-Array of objects with the dropdown options. By default, the display text property is text and
-value for the selector value: 
-
-```javascript
-  const data = [
-      {text : 'David', value : 1},
-      {text : 'Luis', value: 2}
-    ];
-
-```
-
-### textProperty          (String)
-It changes the default 'text' property to display into the selector.
-For example, you could change it for name:
-
-```javascript
-  const data = [
-      {name : 'David', value : 1},
-      {name : 'Luis', value: 2}
-    ];
-
-```
-
-### valueProperty         (String)
-It changes the default 'value' property which cointains the identificator
-for each option. For example, id:
-
-```javascript
-  const data = [
-      {name : 'David', id : 1},
-      {name : 'Luis', id: 2}
-    ];
-
-```
-
-### value                 (String)
-Referred to the value you want to be selected
-
 ## Table (&lt;delavega-table/>)
 A table component to render data received in the **data** attribute. It needs the <delavega-table-column> to render
 each row. It will be displayed as a HTML Table in devices with large screes, and in a cards format for mobile ones.
+  
+The table could be loaded in lazy mode. Just configure your environment to use dynamic imports:
 
+```
+import('delavega-lib/Table')
+```
+
+For example, in your webpack config file, you could configure it as bellow, using <a href="https://webpack.js.org/configuration/resolve/">Webpack resolve</a>
+
+```
+    resolve: {
+        alias: {
+            'delavega-lib': 'delavega-lib/dist'
+        }
+    }
+```
 ### loading                  (Boolean)
 For the asynchronous loads, when it is true, a loading text will be displayed 
 
@@ -137,3 +104,52 @@ The text which be displayed in the head of the Table element, according to its d
 
 ### type          (String)
 To display different kinds of values. Currently, the only supported type is **currency**, with the **€** default value
+
+
+## DropDown (&lt;delavega-dropdown/>)
+Collection of values selector
+
+### defaultEmptyValue     (Boolean)
+Selectable empty value fot he selector. If true, the default empty value could be selected
+
+### defaultEmptyValueText (String - default: 'None')
+if defaultEmptyValue is true, the text to be displayed for 
+
+### data                  (Array)
+Array of objects with the dropdown options. By default, the display text property is text and
+value for the selector value: 
+
+```javascript
+  const data = [
+      {text : 'David', value : 1},
+      {text : 'Luis', value: 2}
+    ];
+
+```
+
+### textProperty          (String)
+It changes the default 'text' property to display into the selector.
+For example, you could change it for name:
+
+```javascript
+  const data = [
+      {name : 'David', value : 1},
+      {name : 'Luis', value: 2}
+    ];
+
+```
+
+### valueProperty         (String)
+It changes the default 'value' property which cointains the identificator
+for each option. For example, id:
+
+```javascript
+  const data = [
+      {name : 'David', id : 1},
+      {name : 'Luis', id: 2}
+    ];
+
+```
+
+### value                 (String)
+Referred to the value you want to be selected
