@@ -5,7 +5,6 @@ export default {
     input: {
         index: 'index.js',
         Table: 'components/table/index.js',
-
     },
     output: {
         dir   : 'dist',

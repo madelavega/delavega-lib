@@ -12,10 +12,8 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
-  "main": "dist",
   "files": [
-    "cjs/*",
-    "esm/*"
+    "dist/*",
   ],
   "scripts": {
     "bundle": "rollup -c",
