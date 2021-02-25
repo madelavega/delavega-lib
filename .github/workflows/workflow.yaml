@@ -20,7 +20,7 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
           scope: '@madelavega'
       - run: npm ci
-      #- run: npm test
+      - run: npm test
       - run: npm run bundle
       - if: github.ref == 'refs/heads/develop'
         run: npm run next-ci
