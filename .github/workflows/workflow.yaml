@@ -16,7 +16,7 @@ jobs:
           node-version: 14
           registry-url: 'https://npm.pkg.github.com'
           scope: '@madelavega'
-      - run: npm install
+      - run: npm ci
       - run: npm test
       - run: npm run bundle
       - if: github.ref == 'refs/heads/develop'
