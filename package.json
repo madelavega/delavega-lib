@@ -12,7 +12,7 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
-  "main": "dist/index.js",
+  "main": "dist",
   "files": [
     "cjs/*",
     "esm/*"
