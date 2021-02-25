@@ -20,8 +20,8 @@
   "scripts": {
     "bundle": "rollup -c",
     "test": "karma start karma.screen.conf.js && karma start karma.mobile.conf.js",
-    "next-ci": "bump prerelease --tag --push --preid rc --all && npm run prepare",
-    "latest-ci": "bump patch --tag --push && npm run prepare && npm publish --tag latest"
+    "next-ci": "bump prerelease --tag --push --preid rc --all && npm publish --tag next",
+    "latest-ci": "bump patch --tag --push && npm publish --tag latest"
   },
   "devDependencies": {
     "@open-wc/testing": "^2.5.32",
