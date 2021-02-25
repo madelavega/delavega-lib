@@ -1,6 +1,6 @@
 {
   "name": "delavega-lib",
-  "version": "0.1.0-rc.2",
+  "version": "0.1.0-rc.3",
   "description": "web components library based on litElement",
   "author": {
     "name": "Manuel de la Vega Arantave",
