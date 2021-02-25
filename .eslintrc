@@ -1,0 +1,35 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:lit/recommended"
+  ],
+
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react"
+  ],
+  "globals" : {
+    "customElements"  : true,
+    "CustomEvent"     : true,
+    "window"      : true
+  },
+  "rules": {
+    "indent"                    : [ "error", 4 ],
+    "linebreak-style"           : [ "error", "unix" ],
+    "quotes"                    : [ "error", "single" ],
+    "semi"                      : [ "error", "always" ],
+    "object-curly-spacing"      : [ "error" , "always" ],
+    "array-bracket-spacing"     : [ "error" , "always" , { "singleValue": false, "objectsInArrays": false }],
+    "block-spacing"             : "error" ,
+    "brace-style"               : [ "error" , "1tbs" , { "allowSingleLine": true }],
+    "comma-dangle"              : [ "error" , "always-multiline" ],
+    "comma-spacing"             : [ "error" , { "before": false, "after": true }],
+    "key-spacing"               : [ "error" , { "align": { "beforeColon": false, "afterColon": true, "on": "colon" } }]
+  }
+}
