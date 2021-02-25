@@ -18,7 +18,6 @@ export default class DropDown extends LitElement {
             data                 : { type: Array },
             textProperty         : { type: String },
             valueProperty        : { type: String },
-            selectedValue        : { type: Object },
             value                : { type: String },
         };
     }
@@ -40,7 +39,7 @@ export default class DropDown extends LitElement {
      * @private
      */
     _onSelect({ target : { value : selectedValue } }) {
-        this.selectedValue = selectedValue;
+        this.value = selectedValue;
         const e = new CustomEvent('selected', {
             detail: { selectedValue },
         });
@@ -72,7 +71,7 @@ export default class DropDown extends LitElement {
         [] ), ...this.data, 
     ]
         .map(({ [this.valueProperty] : value, [this.textProperty] : text }) => this._getOption(value, text)) 
-                }
+}
             </select>
         `;
     }
