@@ -2,7 +2,7 @@
 
 Librabry based on litElements that provides the following components:
 
-## DropDown (<delavega-dropdown/>)
+## DropDown (&lt;delavega-dropdown/>)
 Collection of values selector
 
 ### defaultEmptyValue     (Boolean)
@@ -50,7 +50,7 @@ for each option. For example, id:
 ### value                 (String)
 Referred to the value you want to be selected
 
-## Table (<delavega-table/>)
+## Table (&lt;delavega-table/>)
 A table component to render data received in the **data** attribute. It needs the <delavega-table-column> to render
 each row. It will be displayed as a HTML Table in devices with large screes, and in a cards format for mobile ones.
 
@@ -126,7 +126,7 @@ This could be the columns definition
 
 ```
 
-## TableColumn (<delavega-table-column/>)
+## TableColumn (&lt;delavega-table-column/>)
 As we see above, it is the element the Table element uses to render columns and their data. It has the following properties:
 
 ### dataIndex          (String)
